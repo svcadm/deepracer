@@ -86,7 +86,7 @@ If you pull latest changes for the notebooks, do also run
 pip install --upgrade -r requirements.txt
 ```
 in your venv. This way you will also get upgrades on the requirements.
-
+d
 ### Running
 ```
 python3 -m venv venv
