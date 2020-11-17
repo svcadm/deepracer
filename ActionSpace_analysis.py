@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.4.1
+#       jupytext_version: 1.6.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -43,7 +43,7 @@
 # Run the imports block below:
 
 # AWS DeepRacer Console
-stream_name = 'sim-sample' ## CHANGE This to your simulation application ID
+stream_name = 'wildcard' ## CHANGE This to your simulation application ID
 
 # + jupyter={"source_hidden": true}
 import numpy as np
@@ -81,7 +81,7 @@ for f in tu.get_tracks():
 # Take the name from results above and paste below to load the key elements of the track and view the outline of it.
 
 # + jupyter={"source_hidden": true}
-track: Track = tu.load_track("reinvent_base")
+track: Track = tu.load_track("Austin")
  
 l_track = track.center_line
 l_outer_border = track.outer_border
@@ -109,7 +109,7 @@ pu.plot_trackpoints(track)
 
 # + jupyter={"source_hidden": true}
 # AWS DeepRacer Console
-#stream_name = 'sim-test' ## CHANGE This to your simulation application ID
+stream_name = 'wildcard' ## CHANGE This to your simulation application ID
 fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
 cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
 
@@ -464,5 +464,4 @@ for i in setActions:
     tr_plot = pu.plot_track(df[df['action'] == a.index], track, value_field="reward") 
     plt.show()
 # -
-
 

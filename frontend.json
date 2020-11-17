@@ -1,0 +1,10 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "533616270150.dkr.ecr.ap-northeast-2.amazonaws.com/itsm-frontend",
+        "Update": "true"
+    },
+    "Ports": [{
+        "ContainerPort": "80"
+    }]
+}
