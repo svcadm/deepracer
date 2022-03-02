@@ -6,9 +6,9 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.6.0
+#       jupytext_version: 1.13.7
 #   kernelspec:
-#     display_name: Python 3
+#     display_name: Python 3 (ipykernel)
 #     language: python
 #     name: python3
 # ---
@@ -45,7 +45,7 @@
 # AWS DeepRacer Console
 stream_name = 'wildcard' ## CHANGE This to your simulation application ID
 
-# + jupyter={"source_hidden": true}
+# + tags=[]
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -71,7 +71,7 @@ warnings.filterwarnings('ignore')
 #
 # Tracks Available:
 
-# + jupyter={"source_hidden": true}
+# + tags=[]
 tu = TrackIO()
 
 for f in tu.get_tracks():
